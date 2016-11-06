@@ -1,0 +1,652 @@
+2016-08-21 10:49:03,182 [9] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2016-08-21 10:49:03,216 [9] INFO EasyShopkeeping.UserInfoDAO - System.IndexOutOfRangeException: Could not find specified column in results
+   at MySql.Data.MySqlClient.MySqlDataReader.GetOrdinal(String name)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(String column)
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 61
+2016-08-21 11:11:05,920 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-21 11:11:05,952 [10] INFO EasyShopkeeping.MemberLogin - UserName: RAHAT Tried To Logged In
+2016-08-21 11:11:05,978 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-08-21 11:47:30,861 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-21 11:47:31,000 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:01:07,987 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:01:08,203 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:07:30,701 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:07:30,826 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:15:01,889 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:15:02,015 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:23:22,295 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:23:22,454 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:25:07,476 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:25:07,621 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:26:01,475 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:26:01,642 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:28:01,657 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:28:01,789 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:33:38,350 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:33:38,470 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:35:20,850 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:35:20,985 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:46:58,866 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:46:58,997 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-23 23:50:56,674 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-23 23:50:56,821 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:02:11,393 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:02:11,564 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:06:29,146 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:06:29,265 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:07:27,787 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:07:27,921 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:08:05,037 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:08:05,065 [9] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-08-24 00:08:05,097 [9] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-08-24 00:08:09,303 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:08:09,401 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:13:14,225 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:13:14,361 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:22:04,870 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:22:05,007 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:25:52,189 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:25:52,324 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:27:34,900 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:27:35,036 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 00:29:56,645 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 00:29:56,804 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:04:38,771 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:04:38,909 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:05:43,578 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:05:43,703 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:07:05,518 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:07:05,643 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:13:22,966 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:13:23,107 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:16:34,850 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:16:34,990 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:17:27,394 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:17:27,519 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:26:38,611 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:26:38,752 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 21:28:28,799 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 21:28:28,928 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 22:10:03,221 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 22:10:03,356 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 22:12:01,058 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 22:12:01,186 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-24 22:14:04,870 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-24 22:14:05,020 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 21:48:58,364 [9] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-26 21:48:58,536 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 22:02:06,938 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-26 22:02:07,078 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 22:08:06,247 [10] INFO EasyShopkeeping.UserInfoDAO - Connection Closed
+2016-08-26 22:08:06,387 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:15:44,030 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:19:10,793 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:22:23,672 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:24:10,199 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:25:12,095 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:27:09,164 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:32:49,440 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:40:04,007 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:48:25,217 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:48:32,189 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-26 23:48:32,190 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-26 23:48:32,192 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-26 23:48:32,192 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-26 23:48:32,195 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-26 23:48:32,195 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-26 23:48:32,197 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-26 23:48:32,197 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-26 23:48:32,199 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-26 23:48:32,199 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-26 23:48:32,200 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-26 23:48:32,200 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-26 23:53:15,188 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:53:51,338 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-26 23:53:51,338 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-26 23:53:51,340 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-26 23:53:51,340 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-26 23:53:51,341 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-26 23:53:51,342 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-26 23:53:51,343 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-26 23:53:51,343 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-26 23:53:51,345 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-26 23:53:51,345 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-26 23:53:51,346 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-26 23:53:51,346 [9] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-26 23:55:53,951 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-26 23:57:04,564 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-26 23:57:04,565 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-26 23:57:04,566 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-26 23:57:04,566 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-26 23:57:04,568 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-26 23:57:04,568 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-26 23:57:04,570 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-26 23:57:04,570 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-26 23:57:04,572 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-26 23:57:04,572 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-26 23:57:04,574 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-26 23:57:04,574 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-27 00:10:45,823 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 00:11:03,189 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:11:03,190 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:11:03,192 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-27 00:11:03,192 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-27 00:11:03,194 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:11:03,194 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:11:03,197 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-27 00:11:03,197 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-27 00:11:03,200 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:11:03,200 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:11:03,203 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-27 00:11:03,203 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-27 00:17:03,285 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 00:17:12,533 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:17:12,533 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:17:12,535 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-27 00:17:12,535 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-27 00:17:12,540 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:17:12,540 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:17:12,543 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-27 00:17:12,543 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-27 00:17:12,546 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:17:12,546 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:17:12,547 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-27 00:17:12,547 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-27 00:17:38,116 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:17:38,116 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:17:38,118 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-27 00:17:38,118 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-27 00:17:38,123 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:17:38,123 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:17:38,125 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-27 00:17:38,125 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-27 00:17:38,128 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:17:38,128 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:17:38,130 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-27 00:17:38,130 [8] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-27 00:20:56,892 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 00:21:24,792 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:21:24,792 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:21:24,794 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-27 00:21:24,794 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-27 00:21:24,797 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:21:24,797 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:21:24,798 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-27 00:21:24,799 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-27 00:21:24,800 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:21:24,800 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:21:24,802 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-27 00:21:24,802 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-27 00:21:50,208 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:21:50,208 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:21:50,212 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:2
+2016-08-27 00:21:50,212 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:1
+2016-08-27 00:21:50,214 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:21:50,214 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:21:50,217 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:2
+2016-08-27 00:21:50,217 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:1
+2016-08-27 00:21:50,219 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:21:50,219 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:21:50,222 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:2
+2016-08-27 00:21:50,222 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:1
+2016-08-27 00:57:00,491 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 00:57:09,279 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:57:09,280 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:57:09,280 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 00:57:09,282 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:57:09,282 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:57:09,282 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 00:57:09,284 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:57:09,284 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:57:09,284 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 00:58:28,918 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 00:58:34,513 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 00:58:34,513 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 00:58:34,513 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 00:58:34,515 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 00:58:34,515 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 00:58:34,515 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 00:58:34,518 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 00:58:34,518 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 00:58:34,518 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 01:03:18,940 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 01:03:25,913 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 01:03:25,913 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 01:03:25,913 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 01:03:25,917 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 01:03:25,917 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 01:03:25,917 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - rahat20160826
+2016-08-27 01:03:25,919 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 01:03:25,919 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 01:03:25,919 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - vegetables20160826
+2016-08-27 01:04:31,052 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 01:04:35,568 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:1cellColumnIndex:1
+2016-08-27 01:04:35,569 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:0j:0
+2016-08-27 01:04:35,569 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - PRODUCT_CATEGORY_NAME
+2016-08-27 01:04:35,571 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:2cellColumnIndex:1
+2016-08-27 01:04:35,571 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:1j:0
+2016-08-27 01:04:35,571 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - Grains
+2016-08-27 01:04:35,573 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - cellRowIndex:3cellColumnIndex:1
+2016-08-27 01:04:35,573 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - i:2j:0
+2016-08-27 01:04:35,573 [10] INFO EasyShopkeeping.Utility.ExportDocument.ToExcel - Vegetables
+2016-08-27 01:08:07,638 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 01:27:23,015 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 01:29:00,797 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 01:34:56,112 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 01:37:28,610 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:09:01,093 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:11:12,565 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:13:19,970 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:20:50,432 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:24:44,150 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:28:52,658 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 02:31:24,088 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 16:27:17,820 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 16:44:45,754 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 16:49:55,056 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:01:10,901 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:07:00,197 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:17:16,542 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:17:45,060 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:21:12,316 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:22:30,296 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:22:48,713 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:25:37,523 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 17:26:47,327 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 19:35:09,503 [10] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: danishali68 Tried To Logged In
+2016-08-27 19:35:09,556 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-08-27 19:35:22,217 [10] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-08-27 19:35:22,218 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-08-27 19:35:27,204 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-27 21:04:01,702 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-28 21:46:44,101 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-28 21:57:38,134 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-28 22:14:25,604 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-28 22:22:32,924 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-28 23:57:41,564 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 00:28:52,153 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 00:44:50,192 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 00:46:27,880 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 00:48:26,844 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 00:56:14,838 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 01:00:01,845 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 01:00:39,241 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 01:01:00,646 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 01:02:18,601 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 01:03:31,054 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 01:11:48,688 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 03:09:19,595 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 03:17:30,741 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 03:28:25,942 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 03:45:06,379 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 03:52:30,108 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 03:55:22,112 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 04:10:57,597 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 04:20:27,180 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 04:26:29,137 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 04:37:57,389 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 04:39:18,782 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 04:39:56,010 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:32:01,008 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:32:48,076 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:34:10,441 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:35:43,803 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:36:48,329 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:45:35,517 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-08-29 06:50:05,852 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 00:58:05,955 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 01:33:34,792 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 02:53:34,098 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 02:56:16,731 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 03:50:37,094 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 03:59:05,923 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 04:03:29,362 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 05:26:44,224 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 05:28:15,742 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 06:23:49,850 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 06:26:22,481 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:23:34,085 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:27:51,077 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:30:34,132 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:40:50,613 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:43:15,250 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:45:11,214 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:49:01,092 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 09:54:19,091 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 10:10:52,717 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 10:39:14,816 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 10:40:02,340 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 10:44:00,488 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:00:31,807 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:02:25,361 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:09:16,062 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:12:38,970 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:19:21,925 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:21:28,245 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:33:54,018 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:44:39,610 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:46:52,795 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:53:03,682 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:54:27,881 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-04 11:58:40,897 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 01:52:01,954 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 01:57:01,681 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 02:02:18,109 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 02:02:57,987 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 02:21:30,752 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 02:22:56,850 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 02:29:59,993 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 02:35:11,743 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 03:09:25,819 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 03:13:01,606 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 03:15:35,103 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 03:17:44,981 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 03:22:46,476 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 11:37:51,351 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 11:40:12,339 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 11:45:20,785 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 11:47:36,967 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 12:00:43,950 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 12:06:42,072 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 12:09:07,747 [10] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-09-05 12:09:07,797 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-09-05 12:09:10,990 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:02:13,937 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:11:00,715 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:13:39,344 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:18:46,637 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:19:40,761 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:27:04,272 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 13:27:38,788 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 14:44:45,644 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 14:47:46,844 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 15:05:14,982 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 15:09:29,886 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 15:11:17,172 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 15:17:11,134 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:39:26,108 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:42:13,386 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:43:03,932 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:47:40,437 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:49:02,784 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:51:58,971 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 19:59:33,792 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:04:39,393 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:07:28,050 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:10:02,458 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:12:31,688 [10] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-09-05 20:12:31,755 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-09-05 20:12:34,317 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:14:29,476 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:41:23,227 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-05 20:43:25,782 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-06 23:14:49,387 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-06 23:15:15,611 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-06 23:16:00,383 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-11 19:53:58,736 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-26 21:25:44,326 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-27 22:28:37,405 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-27 22:39:50,341 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-27 22:41:15,517 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-27 22:45:37,095 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-27 22:52:15,530 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 21:49:47,690 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 21:52:39,960 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 21:58:59,377 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:14:55,188 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:16:04,890 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:16:52,795 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:19:16,546 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:20:10,894 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:21:17,795 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:22:33,679 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:23:29,148 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:23:56,895 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:25:15,135 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:30:38,709 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-09-29 23:32:25,199 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-05 23:39:24,293 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:04:25,893 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:08:40,134 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:11:47,851 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:21:46,455 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:22:52,623 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:26:05,030 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:31:31,405 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-06 00:34:07,452 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-07 21:52:25,324 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-07 22:37:41,242 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:30:15,831 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:34:58,325 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:39:24,686 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:40:16,059 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:43:15,459 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:44:22,391 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 10:59:35,234 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 11:16:09,246 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 12:31:23,845 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 12:36:02,441 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 12:40:24,598 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 12:44:51,049 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 12:47:07,747 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 12:51:46,505 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 13:05:43,226 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 13:07:20,826 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 13:40:52,091 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 13:46:23,364 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 13:49:57,209 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:25:38,578 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:28:22,140 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:32:32,499 [9] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2016-10-15 16:32:32,529 [9] INFO EasyShopkeeping.UserInfoDAO - MySql.Data.MySqlClient.MySqlException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123\'' at line 1
+   at MySql.Data.MySqlClient.MySqlStream.OpenPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadResult(UInt64& affectedRows, Int64& lastInsertId)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetResultSet()
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 53
+2016-10-15 16:32:44,351 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:35:07,180 [10] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2016-10-15 16:35:07,216 [10] INFO EasyShopkeeping.UserInfoDAO - MySql.Data.MySqlClient.MySqlException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123\'' at line 1
+   at MySql.Data.MySqlClient.MySqlStream.OpenPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadResult(UInt64& affectedRows, Int64& lastInsertId)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetResultSet()
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 53
+2016-10-15 16:35:16,558 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:45:39,091 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:49:36,603 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:56:25,525 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 16:59:26,705 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:06:41,086 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:12:38,662 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:13:24,928 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:18:05,362 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:19:26,532 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:20:56,463 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:31:45,210 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:37:16,445 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:40:56,752 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:48:11,120 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 17:50:06,252 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:10:57,094 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:31:28,098 [7] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:37:23,181 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:40:05,955 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:44:56,915 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:50:59,335 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 18:58:20,691 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 19:35:52,424 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 19:53:54,233 [9] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-10-15 19:53:54,271 [9] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-10-15 19:54:02,403 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 19:55:49,746 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 22:32:43,961 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 22:35:17,105 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 22:38:44,325 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 22:39:56,595 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 22:45:53,213 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 22:55:40,628 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-15 23:02:46,114 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:15:12,808 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:20:56,393 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:25:36,050 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:29:52,111 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:31:51,587 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:38:49,079 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:40:04,137 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 00:45:30,521 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 11:29:58,060 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 11:33:10,590 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 11:34:38,627 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 11:53:20,214 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 12:32:35,751 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 12:40:41,266 [10] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-10-16 12:40:41,295 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-10-16 12:40:45,700 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 13:13:56,632 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 13:27:43,426 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 13:31:53,027 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 14:11:44,106 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 14:18:29,425 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 14:21:35,982 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 14:25:03,544 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 14:32:13,721 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 21:19:34,797 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 21:26:17,089 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 21:31:02,093 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 21:42:13,305 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 21:47:09,561 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 22:02:07,930 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 22:09:50,415 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 22:47:19,013 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 22:51:07,673 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-16 22:55:29,460 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-17 22:26:05,741 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-17 22:31:17,236 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-17 22:36:30,582 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-17 22:40:05,556 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-17 22:56:11,325 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-18 22:40:23,219 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-18 22:56:49,418 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-18 23:40:51,940 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-19 23:56:41,129 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-19 23:59:47,165 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 00:26:46,611 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 00:29:43,019 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 22:51:43,513 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 22:57:15,811 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 22:59:32,364 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:02:48,616 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:11:27,700 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:13:15,814 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:18:32,336 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:19:46,108 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:21:30,868 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:33:01,341 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:34:52,127 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:39:22,846 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:41:49,387 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:43:25,375 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:44:10,578 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-20 23:47:04,719 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-21 00:00:57,120 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-21 00:07:32,411 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-22 22:37:48,565 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-22 23:11:06,011 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-22 23:13:59,239 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 17:07:39,918 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 17:15:11,258 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 17:31:05,214 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 17:33:45,811 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 17:41:59,344 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 17:47:09,517 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 21:30:35,143 [10] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: raat Tried To Logged In
+2016-10-23 21:30:35,223 [10] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-10-23 21:30:43,995 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 22:42:24,981 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 23:21:33,752 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 23:41:16,348 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-23 23:51:55,466 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:10:04,804 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:15:17,033 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:20:42,788 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:23:46,935 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:26:39,794 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:40:27,835 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:42:13,433 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 00:45:53,746 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 01:16:00,343 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 01:17:47,310 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 01:25:35,363 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 10:50:32,204 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:13:58,382 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:22:39,161 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:25:43,430 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:43:28,859 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:48:16,749 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:49:51,329 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 11:58:30,535 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 12:01:11,174 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 12:03:29,702 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 12:09:43,126 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 12:12:30,183 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:28:46,011 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:32:43,355 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:36:08,135 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:42:56,788 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:45:00,844 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:50:57,903 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 13:53:22,246 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 14:38:42,179 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 14:42:38,978 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 17:18:42,838 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 17:59:20,564 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 18:00:29,479 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 18:05:03,073 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 18:09:13,976 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 18:10:43,817 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 18:12:52,193 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 20:51:02,099 [7] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 22:39:31,921 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 22:47:28,993 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 23:10:28,179 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 23:15:35,627 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 23:19:45,555 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 23:40:46,083 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 23:44:12,266 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-24 23:51:14,252 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 00:09:43,316 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:09:17,761 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:24:36,512 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:31:11,525 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:32:56,422 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:35:26,135 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:39:45,717 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:42:31,879 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:46:59,234 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-25 23:52:12,993 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-26 00:52:36,926 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-26 00:53:43,990 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-26 00:58:15,149 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-26 23:23:49,341 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-10-29 10:27:52,658 [9] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2016-10-29 10:27:52,705 [9] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-10-29 10:27:58,914 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-04 23:49:15,776 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-05 23:54:06,131 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 00:02:12,623 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 00:13:06,047 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 00:16:22,836 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 12:40:18,183 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 12:41:40,557 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 12:44:16,832 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 12:54:02,435 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 12:58:34,091 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 13:05:07,494 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 13:26:09,958 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 13:29:00,136 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 13:33:16,579 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 13:42:56,269 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-11-06 13:44:43,026 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In

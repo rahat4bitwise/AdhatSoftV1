@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BEF40850-8A49-4F76-84A2-91BAE5EEE89F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyShopkeeping</RootNamespace>
+    <AssemblyName>EasyShopkeeping</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>F:\Rahat Data 2015-16\WindowsApplication\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>en-IN</TargetCulture>
+    <ProductName>AdhatSoft</ProductName>
+    <PublisherName>Rahat Ali</PublisherName>
+    <SuiteName>AdhatSoft</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BC66BFC686B613772E50A5AE168D1BFB03110855</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EasyShopkeeping_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.5\lib\net35-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.0.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppsForm\Customer\AddCustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Customer\AddCustomerFrm.Designer.cs">
+      <DependentUpon>AddCustomerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Customer\AllCustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Customer\AllCustomerFrm.Designer.cs">
+      <DependentUpon>AllCustomerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\General\AddAreaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\General\AddAreaFrm.Designer.cs">
+      <DependentUpon>AddAreaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\General\AddDistrictFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\General\AddDistrictFrm.Designer.cs">
+      <DependentUpon>AddDistrictFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\General\AddStateFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\General\AddStateFrm.Designer.cs">
+      <DependentUpon>AddStateFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Inward\AllGoodsEntryDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Inward\AllGoodsEntryDetails.Designer.cs">
+      <DependentUpon>AllGoodsEntryDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Inward\GoodsEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Inward\GoodsEntry.Designer.cs">
+      <DependentUpon>GoodsEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\Category\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\Category\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\ItemDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\ItemDetails.Designer.cs">
+      <DependentUpon>ItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\WieghtCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\WieghtCategory.Designer.cs">
+      <DependentUpon>WieghtCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Outward\SellsDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Outward\SellsDetails.Designer.cs">
+      <DependentUpon>SellsDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Trader\AddTraderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Trader\AddTraderFrm.Designer.cs">
+      <DependentUpon>AddTraderFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Trader\AllTraderFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Trader\AllTraderFrm.Designer.cs">
+      <DependentUpon>AllTraderFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\User\AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\User\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DAO\CategoryDAO.cs" />
+    <Compile Include="Database\DAO\DataGridView\FillDataGridView.cs" />
+    <Compile Include="Database\DAO\DataUtility\CustomerDataUtilty\CustomerDataLoad.cs" />
+    <Compile Include="Database\DAO\DataUtility\DataAccessUtility.cs" />
+    <Compile Include="Database\DAO\DataUtility\DataDeleteUtility.cs" />
+    <Compile Include="Database\DAO\DataUtility\DataLoadUtility.cs" />
+    <Compile Include="Database\DAO\DataUtility\DataLoadUtility\DataLoad.cs" />
+    <Compile Include="Database\DAO\DataUtility\DataUpdateUtility.cs" />
+    <Compile Include="Database\DAO\DataUtility\DBAccessConstant.cs" />
+    <Compile Include="Database\DAO\DataUtility\DBConstant.cs" />
+    <Compile Include="Database\DAO\DataUtility\DeleteCategory.cs" />
+    <Compile Include="Database\DAO\DataUtility\GoodsEntryDataUtility\GoodsEntryDataLoad.cs" />
+    <Compile Include="Database\DAO\DataUtility\InsertCategory.cs" />
+    <Compile Include="Database\DAO\DataUtility\TradeDataLoadUtility\TraderDataLoad.cs" />
+    <Compile Include="Database\DAO\DataUtility\UpdateCategory.cs" />
+    <Compile Include="Database\DAO\FormsData\FillFormWithData.cs" />
+    <Compile Include="Database\DBConnection\Database.cs" />
+    <Compile Include="Database\DBConnection\DataBaseConnection.cs" />
+    <Compile Include="FormData\Customer\AddCustomer.cs">
+    </Compile>
+    <Compile Include="FormData\FormInterface\FormDataHandler.cs" />
+    <Compile Include="FormData\FormInterface\GetFormInput.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\EshopAdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\EshopAdminPage.Designer.cs">
+      <DependentUpon>EshopAdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\Category\Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\Category\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\Category\GetNewCategoryInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\MasterEntry\Category\GetNewCategoryInput.Designer.cs">
+      <DependentUpon>GetNewCategoryInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AppsForm\Customer\AddCustomerFrm.resx">
+      <DependentUpon>AddCustomerFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Customer\AllCustomerFrm.resx">
+      <DependentUpon>AllCustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\General\AddAreaFrm.resx">
+      <DependentUpon>AddAreaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\General\AddDistrictFrm.resx">
+      <DependentUpon>AddDistrictFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\General\AddStateFrm.resx">
+      <DependentUpon>AddStateFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Inward\AllGoodsEntryDetails.resx">
+      <DependentUpon>AllGoodsEntryDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Inward\GoodsEntry.resx">
+      <DependentUpon>GoodsEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\MasterEntry\Category\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Outward\SellsDetails.resx">
+      <DependentUpon>SellsDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Trader\AddTraderFrm.resx">
+      <DependentUpon>AddTraderFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\User\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\EshopAdminPage.resx">
+      <DependentUpon>EshopAdminPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\MasterEntry\Category\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\MasterEntry\Category\GetNewCategoryInput.resx">
+      <DependentUpon>GetNewCategoryInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="EasyShopkeeping_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TableVO\Customer_Info\Customer_Info.cs" />
+    <Compile Include="Utility\AppConstant.cs" />
+    <Compile Include="Utility\Calculation.cs" />
+    <Compile Include="Utility\ComboBoxItem.cs" />
+    <Compile Include="Utility\CommonUtil.cs" />
+    <Compile Include="Utility\Common\DateHelper.cs" />
+    <Compile Include="Utility\CopyUtils.cs" />
+    <Compile Include="Utility\Excepetions\CustomException.cs" />
+    <Compile Include="Utility\ExportDocument\ToExcel.cs" />
+    <Compile Include="Utility\GenerateUniqueID.cs" />
+    <Compile Include="Utility\Helper.cs" />
+    <Compile Include="Utility\Validate.cs" />
+    <Compile Include="Utility\Validation.cs" />
+    <Compile Include="Utility\ValidationMessage.cs" />
+    <Compile Include="Vo\Category.cs" />
+    <Compile Include="Vo\User.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DAO\UserInfoDAO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="Resources\Other\profile-default-male.png" />
+    <None Include="Resources\profileImg.png" />
+    <None Include="Resources\closeIco.jpg" />
+    <None Include="Resources\mimizedIcon.jpg" />
+    <None Include="Resources\fruits-background.jpg" />
+    <None Include="Resources\fruits-background-wallpaper.jpg" />
+    <None Include="Resources\AdminBg.jpg" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\userimg.jpg" />
+    <None Include="Resources\minimized.jpg" />
+    <None Include="Resources\images2.jpg" />
+    <None Include="Resources\round-error-warning-button-clip-art3.jpg" />
+    <None Include="Resources\round-error-warning-button-clip-art2.jpg" />
+    <None Include="Resources\round-error-warning-button-clip-art1.jpg" />
+    <None Include="Resources\round-error-warning-button-clip-art.jpg" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\UpDown1Yellow.ico" />
+    <None Include="Resources\1uparrow.png" />
+    <None Include="Resources\ok_process1.png" />
+    <None Include="Resources\ok_process.png" />
+    <None Include="Resources\Add Green Button1.png" />
+    <None Include="Resources\Get Document.png" />
+    <None Include="Resources\Dakirby309-Windows-8-Metro-Other-Update-Metro.ico" />
+    <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-dialog-close.ico" />
+    <None Include="Resources\delete.ico" />
+    <None Include="Resources\delete %281%291.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\delete %281%29.png" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-7-Save.ico" />
+    <None Include="Resources\Add Green Button.png" />
+    <None Include="Resources\New-icon1.jpg" />
+    <None Include="Resources\New-icon.jpg" />
+    <None Include="Resources\download %283%29.jpg" />
+    <None Include="Resources\download %282%29.jpg" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\images1.jpg" />
+    <None Include="Resources\login.gif" />
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\profileImage\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

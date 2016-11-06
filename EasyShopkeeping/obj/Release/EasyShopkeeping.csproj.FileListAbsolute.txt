@@ -1,0 +1,2 @@
+F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\bin\Release\EasyShopkeeping.exe.config
+F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Release\EasyShopkeeping.csproj.ResolveComReference.cache
