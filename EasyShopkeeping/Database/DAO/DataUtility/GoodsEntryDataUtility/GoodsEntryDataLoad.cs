@@ -123,7 +123,7 @@ namespace EasyShopkeeping
             }
 
             //Entry of lots details into lot details
-            String lotDetailsTable = "lot_details";
+            String lotDetailsTable = "lot_status";
             if(SHORT_LOT_IND.Contains("Y"))
                 {
                     int index=int.Parse(this.LOT_NO_SHORT)-1;
@@ -133,7 +133,7 @@ namespace EasyShopkeeping
 
             for (int i =0; i < lotIds.Length; i++)
             {
-                insertQuery = "insert into " + lotDetailsTable + " values('" + lotIds[i] + "','" + lotBoxes[i] + "','" + G_ENTRY_ID + "');";
+                insertQuery = "insert into " + lotDetailsTable + " values('" + lotIds[i] + "','" + lotBoxes[i] + "','" + G_ENTRY_ID + "','0','"+lotBoxes[i]+"');";
                 insertData(insertQuery,con);
                 Console.WriteLine("Lot_details_Query:" + insertQuery);  
                 
