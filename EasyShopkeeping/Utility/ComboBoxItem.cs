@@ -7,14 +7,14 @@ namespace EasyShopkeeping.Utility
 {
     public class ComboBoxItem
 {
-   string displayValue;
-   string hiddenValue;
+   string displayVal;
+   string hiddenVal;
 
    //Constructor
-   public ComboBoxItem (string d, string h)
+   public ComboBoxItem (string displayValue, string hiddenValue)
    {
-        displayValue = d;
-        hiddenValue = h;
+       displayVal = displayValue;
+       hiddenVal = hiddenValue;
    }
 
    //Accessor
@@ -22,14 +22,14 @@ namespace EasyShopkeeping.Utility
    {
         get
         {
-             return hiddenValue;
+            return hiddenVal;
         }
    }
 
    //Override ToString method
    public override string ToString()
    {
-        return displayValue;
+       return displayVal;
    }
 }
 }

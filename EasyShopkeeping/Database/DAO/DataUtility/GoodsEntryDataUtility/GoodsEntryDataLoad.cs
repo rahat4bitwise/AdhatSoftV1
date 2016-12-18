@@ -133,10 +133,18 @@ namespace EasyShopkeeping
 
             for (int i =0; i < lotIds.Length; i++)
             {
-                insertQuery = "insert into " + lotDetailsTable + " values('" + lotIds[i] + "','" + lotBoxes[i] + "','" + G_ENTRY_ID + "','0','"+lotBoxes[i]+"');";
+                int lotSerial = 0;
+                if (String.IsNullOrEmpty(lotBoxes[i]))
+                {
+                    lotSerial = i + 1;
+                    continue;
+                    
+                }
+                 
+                lotSerial = i + 1;
+                insertQuery = "insert into " + lotDetailsTable + " values('" + lotIds[i] + "','" + lotBoxes[i] + "','" + G_ENTRY_ID + "','0','" + lotBoxes[i] + "','" + lotSerial+ "','N');";
                 insertData(insertQuery,con);
-                Console.WriteLine("Lot_details_Query:" + insertQuery);  
-                
+                Console.WriteLine("Lot_details_Query:" + insertQuery);     
 
             }
             myTrans.Commit();

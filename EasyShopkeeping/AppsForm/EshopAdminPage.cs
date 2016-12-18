@@ -73,7 +73,7 @@ namespace EasyShopkeeping
 
         private void sellsEntryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            SellsDetails sellsDetails = new SellsDetails();
+            SellsEntry sellsDetails = new SellsEntry();
             sellsDetails.Show();
         }
 
@@ -120,7 +120,7 @@ namespace EasyShopkeeping
                 }
                 if (e.Shift && e.KeyCode == Keys.S)
                 {
-                    SellsDetails sellsDetails = new SellsDetails();
+                    SellsEntry sellsDetails = new SellsEntry();
                     sellsDetails.Show();
                 }
             }

@@ -43,6 +43,29 @@ namespace EasyShopkeeping.DAO.DataUtility
              catch (Exception E) { MessageBox.Show(E.Message); }
              return false;
          }
+         public Boolean iscolumnAlreadyPresent(String tableName, String columnName1, String columnName2, String columnName3, String coulNameValue1,String coulNameValue2, String coulNameValue3)
+         {
+             con = dataBaseConnection.getMySqlDBConnection();
+             try
+             {
+                 con.Open();
+                 String sqlStr = "select count(*) from " + tableName + " where " + columnName1 + " = '" + coulNameValue1 + "' and "+ columnName2 + " = '" + coulNameValue2 + "' and "+ columnName3 + " = '" + coulNameValue3 + "'";
+                 MySqlCommand cmd = new MySqlCommand(sqlStr, con);
+                 int recordCount = Convert.ToInt32(cmd.ExecuteScalar());
+                 if (recordCount > 0)
+                 {
+
+                     return true;
+                 }
+                 else
+                 {
+
+                     return false;
+                 }
+             }
+             catch (Exception E) { MessageBox.Show(E.Message); }
+             return false;
+         }
          public MySqlDataReader accessColumnData(String sql)
          {
              MySqlDataReader reader;

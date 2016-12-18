@@ -64,6 +64,13 @@ namespace EasyShopkeeping
             }
             else
                 MessageBox.Show("SomeThing Went Wrong!! Please try Again");
+            if (!(dataAccessUtility.iscolumnAlreadyPresent(tableName, "CUST_FNAME", CUST_FNAME, "CUST_LNAME", CUST_LNAME, "CUST_AREA", CUST_AREA)))
+            {
+                result = insertData(insertQuery);
+
+            }
+            else
+                MessageBox.Show(CUST_FNAME +" "+CUST_LNAME+ " "+CUST_AREA+" Is Already Present");
 
             return result;
         }
