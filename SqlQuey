@@ -1,0 +1,2 @@
+select g_entry.G_ENTRY_ID,g_entry.RECV_DATE,g_entry.TRDR_FNAME_TMARK,g_entry.ITEM_NAME,g_entry.WT_TXT,g_entry.WT_BOX_TYPE,l_status.LOT_SERIAL,l_status.TOT_BOX,l_status.TOT_BAL,
+l_status.TOT_SOLD,g_entry.SHORT_BOX,g_entry.LOT_NO_SHORT,g_entry.QTY_RCVD from goods_entry g_entry left outer join lot_status l_status on g_entry.G_ENTRY_ID=l_status.G_ENTRY_ID where l_status.TOT_BOX is not null or trim(coalesce(l_status.TOT_BOX, '')) <>'' order by 1,2,6;

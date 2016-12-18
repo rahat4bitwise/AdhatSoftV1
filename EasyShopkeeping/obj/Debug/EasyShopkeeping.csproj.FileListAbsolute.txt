@@ -37,7 +37,6 @@ F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.General.AddAreaFrm.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Test.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Inward.GoodsEntry.resources
-F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Outward.SellsDetails.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Trader.AddTraderFrm.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\bin\Debug\EasyShopkeeping.exe.manifest
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\bin\Debug\EasyShopkeeping.application
@@ -49,3 +48,4 @@ F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.General.AddStateFrm.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.MasterEntry.Category.AddItem.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Inward.AllGoodsEntryDetails.resources
+F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Outward.SellsEntry.resources
