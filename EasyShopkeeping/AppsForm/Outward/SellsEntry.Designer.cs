@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.goodsDetailsGroupBox = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.sellsEntryAddMoreBtn = new System.Windows.Forms.Button();
             this.sellsEntryTotalTxt = new System.Windows.Forms.TextBox();
             this.sellsEntryRateTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,7 +50,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.sellsEntryAddMoreBtn = new System.Windows.Forms.Button();
             this.goodsDetailsGroupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sellsEntryDataGridView)).BeginInit();
@@ -59,6 +60,7 @@
             // goodsDetailsGroupBox
             // 
             this.goodsDetailsGroupBox.BackColor = System.Drawing.Color.LightSalmon;
+            this.goodsDetailsGroupBox.Controls.Add(this.label4);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryAddMoreBtn);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryTotalTxt);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryRateTxt);
@@ -78,6 +80,25 @@
             this.goodsDetailsGroupBox.TabIndex = 5;
             this.goodsDetailsGroupBox.TabStop = false;
             this.goodsDetailsGroupBox.Text = "Enter Sells  Detail";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(44, 275);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(217, 16);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Click on Stock Detail Cell To sell >>";
+            // 
+            // sellsEntryAddMoreBtn
+            // 
+            this.sellsEntryAddMoreBtn.Location = new System.Drawing.Point(110, 168);
+            this.sellsEntryAddMoreBtn.Name = "sellsEntryAddMoreBtn";
+            this.sellsEntryAddMoreBtn.Size = new System.Drawing.Size(75, 23);
+            this.sellsEntryAddMoreBtn.TabIndex = 25;
+            this.sellsEntryAddMoreBtn.Text = "Add More";
+            this.sellsEntryAddMoreBtn.UseVisualStyleBackColor = true;
             // 
             // sellsEntryTotalTxt
             // 
@@ -188,6 +209,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.LightSalmon;
             this.groupBox1.Controls.Add(this.sellsEntryDataGridView);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(298, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(989, 522);
@@ -197,13 +219,18 @@
             // 
             // sellsEntryDataGridView
             // 
+            this.sellsEntryDataGridView.AllowUserToAddRows = false;
+            this.sellsEntryDataGridView.AllowUserToDeleteRows = false;
             this.sellsEntryDataGridView.BackgroundColor = System.Drawing.Color.LightSalmon;
             this.sellsEntryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sellsEntryDataGridView.GridColor = System.Drawing.Color.DarkOliveGreen;
             this.sellsEntryDataGridView.Location = new System.Drawing.Point(0, 19);
             this.sellsEntryDataGridView.Name = "sellsEntryDataGridView";
+            this.sellsEntryDataGridView.ReadOnly = true;
+            this.sellsEntryDataGridView.RowHeadersVisible = false;
             this.sellsEntryDataGridView.Size = new System.Drawing.Size(983, 500);
             this.sellsEntryDataGridView.TabIndex = 0;
+            this.sellsEntryDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sellsEntryDataGridView_CellClick);
             // 
             // dateTimePicker1
             // 
@@ -240,15 +267,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // sellsEntryAddMoreBtn
-            // 
-            this.sellsEntryAddMoreBtn.Location = new System.Drawing.Point(110, 168);
-            this.sellsEntryAddMoreBtn.Name = "sellsEntryAddMoreBtn";
-            this.sellsEntryAddMoreBtn.Size = new System.Drawing.Size(75, 23);
-            this.sellsEntryAddMoreBtn.TabIndex = 25;
-            this.sellsEntryAddMoreBtn.Text = "Add More";
-            this.sellsEntryAddMoreBtn.UseVisualStyleBackColor = true;
-            // 
             // SellsEntry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,9 +279,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.goodsDetailsGroupBox);
             this.ForeColor = System.Drawing.Color.DarkGreen;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.MaximizeBox = false;
             this.Name = "SellsEntry";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellsDetails";
@@ -303,5 +320,6 @@
         private System.Windows.Forms.TextBox sellsEntryTotalTxt;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button sellsEntryAddMoreBtn;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -30,15 +30,15 @@ namespace EasyShopkeeping.AppsForm.Outward
         String lotStatusTable="lot_status";
         String goodsEntryTable="goods_entry";
 
-        String goodsDetailQueryString = "Select goodsentry.TRDR_FNAME_TMARK,lotstatus.LOT_ID,goodsentry.ITEM_NAME,goodsentry.WT_BOX_TYPE, "
+        String goodsDetailQueryString = "Select goodsentry.TRDR_FNAME_TMARK,goodsentry.RECV_DATE,goodsentry.ITEM_NAME,goodsentry.WT_BOX_TYPE, "
        +"goodsentry.WT_TXT,lotstatus.LOT_SERIAL,lotstatus.TOT_BOX,IF(FIND_IN_SET(lotstatus.LOT_ID,stockdetails.SHORT_LOT_IND) > 0, "
        +"goodsentry.SHORT_BOX, null) as SHORT_BOX,lotstatus.TOT_BAL,lotstatus.G_ENTRY_ID,lotstatus.TOT_SOLD,lotstatus.TOT_SOLD_IND, "
-       +"goodsentry.TRDR_ID,stockdetails.SHORT_LOT_IND,stockdetails.STOCK_ID from lot_status lotstatus left outer join stock_details "
+       + "goodsentry.TRDR_ID,stockdetails.SHORT_LOT_IND,stockdetails.STOCK_ID,lotstatus.LOT_ID from lot_status lotstatus left outer join stock_details "
        +"stockdetails on lotstatus.G_ENTRY_ID=stockdetails.G_ENTRY_ID inner join goods_entry goodsentry on goodsentry.G_ENTRY_ID=stockdetails.G_ENTRY_ID "
        +"where lotstatus.TOT_SOLD_IND='N'";
-        String[] columnNameToDisplay = new String[] { "Trader Party", "LotId", "Item", "BOX Type", "Wt(Kg)", "Lot Serial","Tot Box Recieved", "Total Box Short", "Total Balance", "Total Sold"};
+        String[] columnNameToDisplay = new String[] { "Trader Party", "Recv.Date", "Item", "BOX Type", "Wt(Kg)", "Lot Serial","Tot Box Recieved", "Total Box Short", "Total Balance", "Total Sold"};
 
-        int[] columnIndexToHide = new int[] { 9, 11, 12, 13, 14 };
+        int[] columnIndexToHide = new int[] { 9, 11, 12, 13, 14,15 };
         FillDataGridView fillData = new FillDataGridView();
         ToExcel toExcel = new ToExcel();
         private void SellsEntry_Load(object sender, EventArgs e)
@@ -101,11 +101,45 @@ namespace EasyShopkeeping.AppsForm.Outward
         {
             errorProvider1.Clear();
             this.itemSelected = sellsEntryItemComboBox.SelectedItem.ToString();
+           String goodsDetailQueryString1 =goodsDetailQueryString+" and goodsentry.ITEM_NAME='"+itemSelected+"'";
+           fillData.fillDataGridView(this.sellsEntryDataGridView, goodsDetailQueryString1, this.columnNameToDisplay, this.columnIndexToHide);
         }
 
-       
+        private void sellsEntryDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-     
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    
+                    String TRDR_FNAME_TMARK = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+                    String RECV_DATE = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    String ITEM_NAME = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    String WT_BOX_TYPE = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+                    String WT_TXT = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    String TOT_BAL = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[8].Value.ToString();
+                    String G_ENTRY_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[9].Value.ToString();
+                    String TOT_SOLD = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[10].Value.ToString();
+                    String TRDR_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[12].Value.ToString();
+                    String STOCK_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[14].Value.ToString();
+                    String LOT_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[15].Value.ToString();
+                    Console.Write("TRDR_FNAME_TMARK:" + TRDR_FNAME_TMARK + "\nRECV_DATE:" + RECV_DATE + "\nITEM_NAME:" + ITEM_NAME + "\nWT_BOX_TYPE:" + WT_BOX_TYPE + "\nWT_TXT:" + WT_TXT + "\nTOT_BAL:" + TOT_BAL + "\nG_ENTRY_ID:" + G_ENTRY_ID + "\nTOT_SOLD:" + TOT_SOLD + "\nTRDR_ID:" + TRDR_ID + "\nSTOCK_ID:" + STOCK_ID + "\nLOT_ID:" + LOT_ID + "\nCUST_ID" + CUST_ID + "\ncustomerSelected:" + customerSelected);
+                    AddSellsDetailFrm addSellsDetailFrm = new AddSellsDetailFrm(customerSelected, ITEM_NAME);
+                    addSellsDetailFrm.Show();
+                    String str = addSellsDetailFrm.amount;
+                    Console.Write(str);
+                }
+              
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
+            
+        }
+
 
     }
 }

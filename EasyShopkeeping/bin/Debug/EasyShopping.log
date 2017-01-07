@@ -666,3 +666,38 @@
 2016-12-18 15:24:37,326 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
 2016-12-18 15:26:53,044 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
 2016-12-18 15:37:02,693 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-18 17:01:50,020 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-18 17:21:08,651 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-24 10:37:19,140 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 11:24:00,502 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 11:41:12,204 [9] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahata Tried To Logged In
+2016-12-26 11:41:12,236 [9] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2016-12-26 11:41:23,280 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 11:48:59,455 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 11:50:41,838 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 11:51:38,038 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 11:53:44,177 [9] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2016-12-26 11:53:44,208 [9] INFO EasyShopkeeping.UserInfoDAO - MySql.Data.MySqlClient.MySqlException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123\'' at line 1
+   at MySql.Data.MySqlClient.MySqlStream.OpenPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadResult(UInt64& affectedRows, Int64& lastInsertId)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetResultSet()
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 53
+2016-12-26 11:53:57,096 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 12:09:02,607 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 12:10:28,823 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 12:12:27,903 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 12:22:33,803 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 12:26:07,995 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 13:17:42,312 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2016-12-26 13:21:56,334 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-02 12:32:55,744 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-02 13:27:41,614 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-02 13:33:01,485 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-02 18:16:40,908 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-02 18:18:08,356 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-07 13:26:04,221 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-07 14:14:10,441 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-07 14:15:12,271 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-07 14:16:40,694 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In

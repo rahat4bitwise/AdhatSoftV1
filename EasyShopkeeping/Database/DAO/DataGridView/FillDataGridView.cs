@@ -11,7 +11,7 @@ namespace EasyShopkeeping
     class FillDataGridView : DataBaseConnection
     {
         MySqlConnection con;
-		string queryString;
+		String queryString;
 		DataGridView dataGridView;
         DataBaseConnection dataBaseConnection= new DataBaseConnection();
 
@@ -97,49 +97,8 @@ namespace EasyShopkeeping
                 columnString = columnString + " " + columnsToPull[i] + ",";
             }
 			columnString=columnString.Remove(columnString.Length-1);
-            con = dataBaseConnection.getMySqlDBConnection();
-            try
-            {
-                con.Open();
-                string queryString = "select "+columnString+" from "+ tableName;
-                //Console.Write(queryString);
-                MySqlCommand cmd = new MySqlCommand(queryString, con);
-                MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                sda.Fill(dt);
-                dataGridView1.DataSource = dt;
-                if(dataGridView1.ColumnCount>0)
-                {
-                    for (int i = 0; i < columnNameToDisplay.Length; i++)
-                    {
-                        dataGridView1.Columns[i].HeaderCell.Value = columnNameToDisplay[i];   
-                    }
-                    
-                }
-                if (dataGridView1.ColumnCount > 0)
-                {
-                    for (int i = 0; i < columnIndexToHide.Length; i++)
-                    {
-                        dataGridView1.Columns[columnIndexToHide[i]].Visible = false;
-                    }
-                }
-               
-                    if(dataGridView1.ColumnCount == 0)
-                    { 
-                    dataGridView1.ColumnCount = 1;
-                    dataGridView1.Columns[0].Name = "No Data Found";
-                    string[] row = new string[] { "" };
-                    dataGridView1.Rows.Add(row);   
-                
-                }
-                con.Close();
-
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message.ToString());
-            }
+            queryString = "select " + columnString + " from " + tableName;
+            fillDataGridView(dataGridView,queryString, columnNameToDisplay, columnIndexToHide);
         }
 
          public void fillDataGridView(DataGridView dataGridView, String tableName, String[] columnsToPull, String[] columnNameToDisplay, int[] columnIndexToHide,String columnToBeSearch,String searchText )
@@ -151,49 +110,8 @@ namespace EasyShopkeeping
                  columnString = columnString + " " + columnsToPull[i] + ",";
              }
              columnString = columnString.Remove(columnString.Length - 1);
-             con = dataBaseConnection.getMySqlDBConnection();
-             try
-             {
-                 con.Open();
-                 string queryString = "select " + columnString + " from " + tableName +" where "+ columnToBeSearch+" like '" + searchText + "%'";
-                 //Console.Write(queryString);
-                 MySqlCommand cmd = new MySqlCommand(queryString, con);
-                 MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
-                 DataTable dt = new DataTable();
-                 sda.Fill(dt);
-                 dataGridView1.DataSource = dt;
-                 if (dataGridView1.ColumnCount > 0)
-                 {
-                     for (int i = 0; i < columnNameToDisplay.Length; i++)
-                     {
-                         dataGridView1.Columns[i].HeaderCell.Value = columnNameToDisplay[i];
-                     }
-
-                 }
-                 if (dataGridView1.ColumnCount > 0)
-                 {
-                     for (int i = 0; i < columnIndexToHide.Length; i++)
-                     {
-                         dataGridView1.Columns[columnIndexToHide[i]].Visible = false;
-                     }
-                 }
-
-                 if (dataGridView1.ColumnCount == 0)
-                 {
-                     dataGridView1.ColumnCount = 1;
-                     dataGridView1.Columns[0].Name = "No Data Found";
-                     string[] row = new string[] { "" };
-                     dataGridView1.Rows.Add(row);
-
-                 }
-                 con.Close();
-
-             }
-             catch (Exception ex)
-             {
-
-                 MessageBox.Show("Can not open connection ! " + ex.Message.ToString());
-             }
+             queryString = "select " + columnString + " from " + tableName +" where "+ columnToBeSearch+" like '" + searchText + "%'";
+             fillDataGridView(dataGridView,queryString, columnNameToDisplay, columnIndexToHide);
          }
 
          public void fillDataGridView(DataGridView dataGridView, String tableName, String[] columnsToPull, String[] columnNameToDisplay, int[] columnIndexToHide, String whereCondition)
@@ -206,65 +124,70 @@ namespace EasyShopkeeping
              }
              columnString = columnString.Remove(columnString.Length - 1);
 			 queryString = "select " + columnString + " from " + tableName + " where " + whereCondition;
-             
-			 fillDataGridView(queryString,columnNameToDisplay,columnIndexToHide);
+
+             fillDataGridView(dataGridView,queryString, columnNameToDisplay, columnIndexToHide);
              
          }
-		public void fillDataGridView(String queryString, String[] columnNameToDisplay, int[] columnIndexToHide ){
-              
-            try
-             {
-				 con = dataBaseConnection.getMySqlDBConnection();
-                 con.Open();
-                 
-                 //Console.Write(queryString);
-                 MySqlCommand cmd = new MySqlCommand(queryString, con);
-                 MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
-                 DataTable dt = new DataTable();
-                 sda.Fill(dt);
-                 dataGridView.DataSource = dt;
-                 if (dataGridView.ColumnCount > 0)
-                 {
-                     for (int i = 0; i < columnNameToDisplay.Length; i++)
-                     {
-                         dataGridView.Columns[i].HeaderCell.Value = columnNameToDisplay[i];
-                     }
+         public void fillDataGridView(DataGridView dataGridView, String queryString, String[] columnNameToDisplay, int[] columnIndexToHide,String whereCondition)
+         {
 
-                 }
-                 if (dataGridView.ColumnCount > 0)
-                 {
-                     for (int i = 0; i < columnIndexToHide.Length; i++)
-                     {
-                         dataGridView.Columns[columnIndexToHide[i]].Visible = false;
-                     }
-                 }
-
-                 if (dataGridView.ColumnCount == 0)
-                 {
-                     dataGridView.ColumnCount = 1;
-                     dataGridView.Columns[0].Name = "No Data Found";
-                     string[] row = new string[] { "" };
-                     dataGridView.Rows.Add(row);
-
-                 }
-                 con.Close();
-
-             }
-             catch (Exception ex)
-             {
-
-                 MessageBox.Show("Can not open connection ! " + ex.Message.ToString());
-             }
-	}
+             queryString = queryString+ " where " + whereCondition;
+             fillDataGridView(dataGridView,queryString, columnNameToDisplay, columnIndexToHide);
+         }
   public void fillDataGridView(DataGridView dataGridView, String queryString,String[] columnNameToDisplay, int[] columnIndexToHide)
          {
            
              this.dataGridView = dataGridView;
              fillDataGridView(queryString, columnNameToDisplay, columnIndexToHide);
-
     }
-    
-    
+
+  public void fillDataGridView(String queryString, String[] columnNameToDisplay, int[] columnIndexToHide)
+  {
+
+      try
+      {
+          con = dataBaseConnection.getMySqlDBConnection();
+          con.Open();
+
+          //Console.Write(queryString);
+          MySqlCommand cmd = new MySqlCommand(queryString, con);
+          MySqlDataAdapter sda = new MySqlDataAdapter(cmd);
+          DataTable dt = new DataTable();
+          sda.Fill(dt);
+          dataGridView.DataSource = dt;
+          if (dataGridView.ColumnCount > 0)
+          {
+              for (int i = 0; i < columnNameToDisplay.Length; i++)
+              {
+                  dataGridView.Columns[i].HeaderCell.Value = columnNameToDisplay[i];
+              }
+
+          }
+          if (dataGridView.ColumnCount > 0)
+          {
+              for (int i = 0; i < columnIndexToHide.Length; i++)
+              {
+                  dataGridView.Columns[columnIndexToHide[i]].Visible = false;
+              }
+          }
+
+          if (dataGridView.ColumnCount == 0)
+          {
+              dataGridView.ColumnCount = 1;
+              dataGridView.Columns[0].Name = "No Data Found";
+              string[] row = new string[] { "" };
+              dataGridView.Rows.Add(row);
+
+          }
+          con.Close();
+
+      }
+      catch (Exception ex)
+      {
+
+          MessageBox.Show("Can not open connection ! " + ex.Message.ToString());
+      }
+  }
     }
 
 }

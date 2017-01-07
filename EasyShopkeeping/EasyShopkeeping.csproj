@@ -169,6 +169,12 @@
     <Compile Include="AppsForm\MasterEntry\WieghtCategory.Designer.cs">
       <DependentUpon>WieghtCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppsForm\Outward\AddSellsDetailFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Outward\AddSellsDetailFrm.Designer.cs">
+      <DependentUpon>AddSellsDetailFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppsForm\Outward\SellsEntry.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +289,9 @@
     <EmbeddedResource Include="AppsForm\MasterEntry\Category\AddItem.resx">
       <DependentUpon>AddItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Outward\AddSellsDetailFrm.resx">
+      <DependentUpon>AddSellsDetailFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AppsForm\Outward\SellsEntry.resx">
       <DependentUpon>SellsEntry.cs</DependentUpon>
     </EmbeddedResource>
@@ -354,6 +363,7 @@
     <Compile Include="Utility\Validation.cs" />
     <Compile Include="Utility\ValidationMessage.cs" />
     <Compile Include="Vo\Category.cs" />
+    <Compile Include="Vo\SellsEntryForCustomerVO.cs" />
     <Compile Include="Vo\User.cs" />
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>
