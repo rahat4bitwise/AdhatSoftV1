@@ -97,6 +97,8 @@
             this.Rate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.closeBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generateBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -386,7 +388,9 @@
             this.getCollectionDetailsToolStripMenuItem,
             this.generateStatementToolStripMenuItem1,
             this.getPaymentDetailsToolStripMenuItem,
-            this.allCustomerToolStripMenuItem});
+            this.allCustomerToolStripMenuItem,
+            this.closeBillToolStripMenuItem,
+            this.generateBillToolStripMenuItem});
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
             this.customerToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.customerToolStripMenuItem.Text = "Customer";
@@ -407,12 +411,14 @@
             this.getCollectionDetailsToolStripMenuItem.Name = "getCollectionDetailsToolStripMenuItem";
             this.getCollectionDetailsToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
             this.getCollectionDetailsToolStripMenuItem.Text = "Get Collection Details";
+            this.getCollectionDetailsToolStripMenuItem.Click += new System.EventHandler(this.getCollectionDetailsToolStripMenuItem_Click);
             // 
             // generateStatementToolStripMenuItem1
             // 
             this.generateStatementToolStripMenuItem1.Name = "generateStatementToolStripMenuItem1";
             this.generateStatementToolStripMenuItem1.Size = new System.Drawing.Size(219, 22);
             this.generateStatementToolStripMenuItem1.Text = "Generate Statement";
+            this.generateStatementToolStripMenuItem1.Click += new System.EventHandler(this.generateStatementToolStripMenuItem1_Click);
             // 
             // getPaymentDetailsToolStripMenuItem
             // 
@@ -728,11 +734,23 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // closeBillToolStripMenuItem
+            // 
+            this.closeBillToolStripMenuItem.Name = "closeBillToolStripMenuItem";
+            this.closeBillToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.closeBillToolStripMenuItem.Text = "Close Bill";
+            this.closeBillToolStripMenuItem.Click += new System.EventHandler(this.closeBillToolStripMenuItem_Click);
+            // 
+            // generateBillToolStripMenuItem
+            // 
+            this.generateBillToolStripMenuItem.Name = "generateBillToolStripMenuItem";
+            this.generateBillToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
+            this.generateBillToolStripMenuItem.Text = "Generate Bill";
+            // 
             // AdminWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.BackgroundImage = global::EasyShopkeeping.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(954, 567);
             this.Controls.Add(this.tablePanel);
@@ -740,7 +758,7 @@
             this.Controls.Add(this.logoPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.Name = "AdminWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -844,5 +862,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ToolStripMenuItem allCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem allGoodsEntryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem closeBillToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generateBillToolStripMenuItem;
     }
 }

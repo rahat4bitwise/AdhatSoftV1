@@ -171,6 +171,22 @@ namespace EasyShopkeeping
                 AllGoodsEntryDetails allGoodsEntryDetails = new AllGoodsEntryDetails();
                 allGoodsEntryDetails.Show();
             }
+
+            private void getCollectionDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+                GetCollectionForCust getCollectionForCust = new GetCollectionForCust();
+                getCollectionForCust.Show();
+            }
+
+            private void generateStatementToolStripMenuItem1_Click(object sender, EventArgs e)
+            {
+                
+            }
+
+            private void closeBillToolStripMenuItem_Click(object sender, EventArgs e)
+            {
+
+            }
         
 
 

@@ -32,21 +32,15 @@
             this.goodsDetailsGroupBox = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.sellsEntryAddMoreBtn = new System.Windows.Forms.Button();
-            this.sellsEntryTotalTxt = new System.Windows.Forms.TextBox();
-            this.sellsEntryRateTxt = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.sellsEntryTotalAmountTxt = new System.Windows.Forms.TextBox();
             this.sellsEntryCutomerComboBox = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.resetBtn = new System.Windows.Forms.Button();
             this.sellsEntrySaveBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.sellsEntryItemComboBox = new System.Windows.Forms.ComboBox();
             this.item = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.sellsEntryDataGridView = new System.Windows.Forms.DataGridView();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
@@ -62,21 +56,15 @@
             this.goodsDetailsGroupBox.BackColor = System.Drawing.Color.LightSalmon;
             this.goodsDetailsGroupBox.Controls.Add(this.label4);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryAddMoreBtn);
-            this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryTotalTxt);
-            this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryRateTxt);
-            this.goodsDetailsGroupBox.Controls.Add(this.label2);
-            this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryTotalAmountTxt);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryCutomerComboBox);
             this.goodsDetailsGroupBox.Controls.Add(this.label13);
-            this.goodsDetailsGroupBox.Controls.Add(this.button2);
-            this.goodsDetailsGroupBox.Controls.Add(this.label8);
+            this.goodsDetailsGroupBox.Controls.Add(this.resetBtn);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntrySaveBtn);
-            this.goodsDetailsGroupBox.Controls.Add(this.label1);
             this.goodsDetailsGroupBox.Controls.Add(this.sellsEntryItemComboBox);
             this.goodsDetailsGroupBox.Controls.Add(this.item);
-            this.goodsDetailsGroupBox.Location = new System.Drawing.Point(12, 32);
+            this.goodsDetailsGroupBox.Location = new System.Drawing.Point(12, 30);
             this.goodsDetailsGroupBox.Name = "goodsDetailsGroupBox";
-            this.goodsDetailsGroupBox.Size = new System.Drawing.Size(267, 522);
+            this.goodsDetailsGroupBox.Size = new System.Drawing.Size(280, 524);
             this.goodsDetailsGroupBox.TabIndex = 5;
             this.goodsDetailsGroupBox.TabStop = false;
             this.goodsDetailsGroupBox.Text = "Enter Sells  Detail";
@@ -85,7 +73,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 275);
+            this.label4.Location = new System.Drawing.Point(57, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(217, 16);
             this.label4.TabIndex = 26;
@@ -93,42 +81,13 @@
             // 
             // sellsEntryAddMoreBtn
             // 
-            this.sellsEntryAddMoreBtn.Location = new System.Drawing.Point(110, 168);
+            this.sellsEntryAddMoreBtn.Location = new System.Drawing.Point(47, 223);
             this.sellsEntryAddMoreBtn.Name = "sellsEntryAddMoreBtn";
             this.sellsEntryAddMoreBtn.Size = new System.Drawing.Size(75, 23);
             this.sellsEntryAddMoreBtn.TabIndex = 25;
             this.sellsEntryAddMoreBtn.Text = "Add More";
             this.sellsEntryAddMoreBtn.UseVisualStyleBackColor = true;
-            // 
-            // sellsEntryTotalTxt
-            // 
-            this.sellsEntryTotalTxt.Location = new System.Drawing.Point(101, 83);
-            this.sellsEntryTotalTxt.Name = "sellsEntryTotalTxt";
-            this.sellsEntryTotalTxt.Size = new System.Drawing.Size(160, 20);
-            this.sellsEntryTotalTxt.TabIndex = 24;
-            // 
-            // sellsEntryRateTxt
-            // 
-            this.sellsEntryRateTxt.Location = new System.Drawing.Point(101, 112);
-            this.sellsEntryRateTxt.Name = "sellsEntryRateTxt";
-            this.sellsEntryRateTxt.Size = new System.Drawing.Size(160, 20);
-            this.sellsEntryRateTxt.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Rate";
-            // 
-            // sellsEntryTotalAmountTxt
-            // 
-            this.sellsEntryTotalAmountTxt.Location = new System.Drawing.Point(101, 142);
-            this.sellsEntryTotalAmountTxt.Name = "sellsEntryTotalAmountTxt";
-            this.sellsEntryTotalAmountTxt.Size = new System.Drawing.Size(160, 20);
-            this.sellsEntryTotalAmountTxt.TabIndex = 5;
+            this.sellsEntryAddMoreBtn.Click += new System.EventHandler(this.sellsEntryAddMoreBtn_Click);
             // 
             // sellsEntryCutomerComboBox
             // 
@@ -149,42 +108,24 @@
             this.label13.TabIndex = 20;
             this.label13.Text = "Customer";
             // 
-            // button2
+            // resetBtn
             // 
-            this.button2.Location = new System.Drawing.Point(155, 213);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Resets";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 86);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 13);
-            this.label8.TabIndex = 17;
-            this.label8.Text = "Total";
+            this.resetBtn.Location = new System.Drawing.Point(186, 145);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(75, 23);
+            this.resetBtn.TabIndex = 19;
+            this.resetBtn.Text = "Resets";
+            this.resetBtn.UseVisualStyleBackColor = true;
             // 
             // sellsEntrySaveBtn
             // 
-            this.sellsEntrySaveBtn.Location = new System.Drawing.Point(47, 213);
+            this.sellsEntrySaveBtn.Location = new System.Drawing.Point(101, 145);
             this.sellsEntrySaveBtn.Name = "sellsEntrySaveBtn";
             this.sellsEntrySaveBtn.Size = new System.Drawing.Size(75, 23);
             this.sellsEntrySaveBtn.TabIndex = 16;
             this.sellsEntrySaveBtn.Text = "Save";
             this.sellsEntrySaveBtn.UseVisualStyleBackColor = true;
             this.sellsEntrySaveBtn.Click += new System.EventHandler(this.sellsEntrySaveBtn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 146);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Total Amount(Rs)";
             // 
             // sellsEntryItemComboBox
             // 
@@ -232,12 +173,12 @@
             this.sellsEntryDataGridView.TabIndex = 0;
             this.sellsEntryDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.sellsEntryDataGridView_CellClick);
             // 
-            // dateTimePicker1
+            // dateTimePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(332, 5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker.Location = new System.Drawing.Point(332, 5);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker.TabIndex = 7;
             // 
             // label3
             // 
@@ -269,13 +210,14 @@
             // 
             // SellsEntry
             // 
+            this.AcceptButton = this.sellsEntrySaveBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::EasyShopkeeping.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(1279, 566);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTimePicker);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.goodsDetailsGroupBox);
             this.ForeColor = System.Drawing.Color.DarkGreen;
@@ -301,23 +243,17 @@
         #endregion
 
         private System.Windows.Forms.GroupBox goodsDetailsGroupBox;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button resetBtn;
         private System.Windows.Forms.Button sellsEntrySaveBtn;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox sellsEntryItemComboBox;
         private System.Windows.Forms.Label item;
-        private System.Windows.Forms.TextBox sellsEntryRateTxt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox sellsEntryTotalAmountTxt;
         private System.Windows.Forms.ComboBox sellsEntryCutomerComboBox;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView sellsEntryDataGridView;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox sellsEntryTotalTxt;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button sellsEntryAddMoreBtn;
         private System.Windows.Forms.Label label4;

@@ -15,6 +15,7 @@ namespace EasyShopkeeping
         DataAccessUtility dataAccessUtility = new DataAccessUtility();
         DataBaseConnection dataBaseConnection = new DataBaseConnection();
         MySqlConnection con;
+        
        
         String insertQuery;
         String updateQuery;
@@ -67,8 +68,8 @@ namespace EasyShopkeeping
             this.QTY_RCVD = QTY_RCVD;
             this.TRDR_FNAME_TMARK = TRDR_FNAME_TMARK;
             this.LOT_NO_SHORT = LOT_NO_SHORT;
-           
 
+            //Entry of goods_entry details 
             String G_ENTRY_ID = "GETRYID" + GenerateUniqueID.RandomString(8);
          try{   
             con = dataBaseConnection.getMySqlDBConnection();

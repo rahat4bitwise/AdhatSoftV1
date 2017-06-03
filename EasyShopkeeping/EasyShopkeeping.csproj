@@ -121,6 +121,24 @@
     <Compile Include="AppsForm\Customer\AllCustomerFrm.Designer.cs">
       <DependentUpon>AllCustomerFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppsForm\Customer\GenerateStmtForCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Customer\GenerateStmtForCust.Designer.cs">
+      <DependentUpon>GenerateStmtForCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Customer\GetCollectionForCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Customer\GetCollectionForCust.Designer.cs">
+      <DependentUpon>GetCollectionForCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppsForm\Customer\PaymentFromCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppsForm\Customer\PaymentFromCust.Designer.cs">
+      <DependentUpon>PaymentFromCust.cs</DependentUpon>
+    </Compile>
     <Compile Include="AppsForm\General\AddAreaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -218,6 +236,7 @@
     <Compile Include="Database\DAO\DataUtility\DeleteCategory.cs" />
     <Compile Include="Database\DAO\DataUtility\GoodsEntryDataUtility\GoodsEntryDataLoad.cs" />
     <Compile Include="Database\DAO\DataUtility\InsertCategory.cs" />
+    <Compile Include="Database\DAO\DataUtility\SellsEntryDetails\SellsEntryDataLoad.cs" />
     <Compile Include="Database\DAO\DataUtility\TradeDataLoadUtility\TraderDataLoad.cs" />
     <Compile Include="Database\DAO\DataUtility\UpdateCategory.cs" />
     <Compile Include="Database\DAO\FormsData\FillFormWithData.cs" />
@@ -270,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppsForm\Customer\AllCustomerFrm.resx">
       <DependentUpon>AllCustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppsForm\Customer\GetCollectionForCust.resx">
+      <DependentUpon>GetCollectionForCust.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AppsForm\General\AddAreaFrm.resx">
       <DependentUpon>AddAreaFrm.cs</DependentUpon>
@@ -349,6 +371,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="TableVO\Customer_Info\Customer_Info.cs" />
+    <Compile Include="Vo\outward\SellsEntry\SellEntryDetailsVO.cs" />
+    <Compile Include="Vo\outward\SellsEntry\SellsEntryForTraderVO.cs" />
+    <Compile Include="Vo\outward\SellsEntry\SellsEntryVO.cs" />
     <Compile Include="Utility\AppConstant.cs" />
     <Compile Include="Utility\Calculation.cs" />
     <Compile Include="Utility\ComboBoxItem.cs" />
@@ -363,7 +388,7 @@
     <Compile Include="Utility\Validation.cs" />
     <Compile Include="Utility\ValidationMessage.cs" />
     <Compile Include="Vo\Category.cs" />
-    <Compile Include="Vo\SellsEntryForCustomerVO.cs" />
+    <Compile Include="Vo\outward\SellsEntry\SellsEntryForCustomerVO.cs" />
     <Compile Include="Vo\User.cs" />
     <Compile Include="UserForm.cs">
       <SubType>Form</SubType>

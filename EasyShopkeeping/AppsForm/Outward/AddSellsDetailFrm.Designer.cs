@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,15 +40,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.customerLbl = new System.Windows.Forms.Label();
             this.itemLbl = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.qtyTxt = new System.Windows.Forms.TextBox();
+            this.rateTxt = new System.Windows.Forms.TextBox();
+            this.totAmntTxt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.tradersGood = new System.Windows.Forms.Label();
+            this.traderLbl = new System.Windows.Forms.Label();
             this.lotNo = new System.Windows.Forms.Label();
-            this.lotQty = new System.Windows.Forms.Label();
+            this.lotBalLbl = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -115,7 +116,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 172);
+            this.label5.Location = new System.Drawing.Point(80, 163);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 7;
@@ -124,7 +125,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(80, 198);
+            this.label6.Location = new System.Drawing.Point(80, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 8;
@@ -148,95 +149,82 @@
             this.itemLbl.TabIndex = 10;
             this.itemLbl.Text = "itemName";
             // 
-            // label9
+            // qtyTxt
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(392, 68);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "label9";
+            this.qtyTxt.Location = new System.Drawing.Point(167, 130);
+            this.qtyTxt.Name = "qtyTxt";
+            this.qtyTxt.Size = new System.Drawing.Size(100, 20);
+            this.qtyTxt.TabIndex = 13;
+            this.qtyTxt.TextChanged += new System.EventHandler(this.qtyTxt_TextChanged);
             // 
-            // label10
+            // rateTxt
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(307, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(37, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Bill No";
+            this.rateTxt.Location = new System.Drawing.Point(167, 156);
+            this.rateTxt.Name = "rateTxt";
+            this.rateTxt.Size = new System.Drawing.Size(100, 20);
+            this.rateTxt.TabIndex = 14;
+            this.rateTxt.TextChanged += new System.EventHandler(this.rateTxt_TextChanged);
             // 
-            // textBox1
+            // totAmntTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(167, 165);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 14;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(167, 191);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 15;
+            this.totAmntTxt.Location = new System.Drawing.Point(167, 182);
+            this.totAmntTxt.Name = "totAmntTxt";
+            this.totAmntTxt.Size = new System.Drawing.Size(100, 20);
+            this.totAmntTxt.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(307, 102);
+            this.label7.Location = new System.Drawing.Point(293, 68);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 13);
+            this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 17;
-            this.label7.Text = "Trader\'s Good";
+            this.label7.Text = "Trader";
             // 
-            // tradersGood
+            // traderLbl
             // 
-            this.tradersGood.AutoSize = true;
-            this.tradersGood.Location = new System.Drawing.Point(385, 102);
-            this.tradersGood.Name = "tradersGood";
-            this.tradersGood.Size = new System.Drawing.Size(74, 13);
-            this.tradersGood.TabIndex = 18;
-            this.tradersGood.Text = "Trader\'s Good";
+            this.traderLbl.AutoSize = true;
+            this.traderLbl.Location = new System.Drawing.Point(385, 68);
+            this.traderLbl.Name = "traderLbl";
+            this.traderLbl.Size = new System.Drawing.Size(38, 13);
+            this.traderLbl.TabIndex = 18;
+            this.traderLbl.Text = "Trader";
             // 
             // lotNo
             // 
             this.lotNo.AutoSize = true;
-            this.lotNo.Location = new System.Drawing.Point(309, 135);
+            this.lotNo.Location = new System.Drawing.Point(293, 102);
             this.lotNo.Name = "lotNo";
-            this.lotNo.Size = new System.Drawing.Size(22, 13);
+            this.lotNo.Size = new System.Drawing.Size(73, 13);
             this.lotNo.TabIndex = 19;
-            this.lotNo.Text = "Lot";
+            this.lotNo.Text = "Total Balance";
             // 
-            // lotQty
+            // lotBalLbl
             // 
-            this.lotQty.AutoSize = true;
-            this.lotQty.Location = new System.Drawing.Point(374, 135);
-            this.lotQty.Name = "lotQty";
-            this.lotQty.Size = new System.Drawing.Size(36, 13);
-            this.lotQty.TabIndex = 20;
-            this.lotQty.Text = "LotNo";
+            this.lotBalLbl.AutoSize = true;
+            this.lotBalLbl.Location = new System.Drawing.Point(385, 102);
+            this.lotBalLbl.Name = "lotBalLbl";
+            this.lotBalLbl.Size = new System.Drawing.Size(37, 13);
+            this.lotBalLbl.TabIndex = 20;
+            this.lotBalLbl.Text = "LotBal";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // AddSellsDetailFrm
             // 
+            this.AcceptButton = this.okButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 262);
-            this.Controls.Add(this.lotQty);
+            this.Controls.Add(this.lotBalLbl);
             this.Controls.Add(this.lotNo);
-            this.Controls.Add(this.tradersGood);
+            this.Controls.Add(this.traderLbl);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.totAmntTxt);
+            this.Controls.Add(this.rateTxt);
+            this.Controls.Add(this.qtyTxt);
             this.Controls.Add(this.itemLbl);
             this.Controls.Add(this.customerLbl);
             this.Controls.Add(this.label6);
@@ -250,6 +238,9 @@
             this.Controls.Add(this.button1);
             this.Name = "AddSellsDetailFrm";
             this.Text = "AddSellsDetailFrm";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.AddSellsDetailFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,14 +259,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label customerLbl;
         private System.Windows.Forms.Label itemLbl;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox qtyTxt;
+        private System.Windows.Forms.TextBox rateTxt;
+        private System.Windows.Forms.TextBox totAmntTxt;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label tradersGood;
+        private System.Windows.Forms.Label traderLbl;
         private System.Windows.Forms.Label lotNo;
-        private System.Windows.Forms.Label lotQty;
+        private System.Windows.Forms.Label lotBalLbl;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -57,7 +57,24 @@ namespace EasyShopkeeping
             }
 
          }
+        public void updateData(String sqlString, MySqlConnection conn)
+        {
+            int result = 0;
+            try
+            {
 
+                MySqlCommand cmd = new MySqlCommand(sqlString, con);
+                result = cmd.ExecuteNonQuery();
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("DataBase Error::" + ex);
+            }
+           
+        }
 
     }
 }

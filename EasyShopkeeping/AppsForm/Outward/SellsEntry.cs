@@ -1,6 +1,9 @@
-﻿using EasyShopkeeping.Utility;
+﻿using EasyShopkeeping.TableVO;
+using EasyShopkeeping.Utility;
 using EasyShopkeeping.Utility.Common;
 using EasyShopkeeping.Utility.ExportDocument;
+using EasyShopkeeping.Vo;
+using EasyShopkeeping.Vo.outward.SellsEntry;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -17,6 +20,8 @@ namespace EasyShopkeeping.AppsForm.Outward
     {
 
         Helper helper = new Helper();
+        Validation validate = new Validation();
+        Boolean isCellClicked = false;
 
         public SellsEntry()
         {
@@ -29,6 +34,9 @@ namespace EasyShopkeeping.AppsForm.Outward
         String goodEntryTable = "goods_entry";
         String lotStatusTable="lot_status";
         String goodsEntryTable="goods_entry";
+        SellsEntryForCustomerVO sellsEntryForCustomerVO;
+        
+        SellsEntryDataLoad sellsEntryDataLoad;
 
         String goodsDetailQueryString = "Select goodsentry.TRDR_FNAME_TMARK,goodsentry.RECV_DATE,goodsentry.ITEM_NAME,goodsentry.WT_BOX_TYPE, "
        +"goodsentry.WT_TXT,lotstatus.LOT_SERIAL,lotstatus.TOT_BOX,IF(FIND_IN_SET(lotstatus.LOT_ID,stockdetails.SHORT_LOT_IND) > 0, "
@@ -43,13 +51,15 @@ namespace EasyShopkeeping.AppsForm.Outward
         ToExcel toExcel = new ToExcel();
         private void SellsEntry_Load(object sender, EventArgs e)
         {
+            
+
             fillData.fillDataGridView(this.sellsEntryDataGridView, goodsDetailQueryString, this.columnNameToDisplay, this.columnIndexToHide);
             sellsEntryCutomerComboBox.Items.Clear();
             sellsEntryItemComboBox.Items.Clear();
            try
             {
             FillFormWithData comboboxDataReader = new FillFormWithData();
-            MySqlDataReader reader1 = comboboxDataReader.getDataInComboBox("customer_data", "CUST_ID,CUST_FNAME,CUST_LNAME,CUST_AREA");
+            MySqlDataReader reader1 = comboboxDataReader.getDataInComboBox("customer_data", "CUST_ID,CUST_FNAME,CUST_LNAME,CUST_AREA,CUST_DISTRICT");
             MySqlDataReader reader2 = comboboxDataReader.getDataInComboBox("item_details", "ITEM_NAME");
             if (!(reader1.HasRows))
             {
@@ -61,7 +71,7 @@ namespace EasyShopkeeping.AppsForm.Outward
             }
             while (reader1.Read())
             {
-                sellsEntryCutomerComboBox.Items.Add(new ComboBoxItem(reader1.GetString("CUST_FNAME") + " "+reader1.GetString("CUST_LNAME")+" "+helper.nullToEmpty(reader1.GetString("CUST_AREA")), reader1.GetString("CUST_ID")));
+                sellsEntryCutomerComboBox.Items.Add(new ComboBoxItem(reader1.GetString("CUST_FNAME") + " " + reader1.GetString("CUST_LNAME") + " " + helper.nullToEmpty(reader1.GetString("CUST_AREA") + " " + reader1.GetString("CUST_DISTRICT")), reader1.GetString("CUST_ID")));
             }
             while (reader2.Read())
             {
@@ -75,8 +85,30 @@ namespace EasyShopkeeping.AppsForm.Outward
         }
         private void sellsEntrySaveBtn_Click(object sender, EventArgs e)
         {
+            if (isCellClicked == true)
+            {
+                DateTime date = dateTimePicker.Value;
+                sellsEntryForCustomerVO.Date = DateHelper.getSqlString(date);
+                int sellEntryCount = sellsEntryForCustomerVO.SellEntryDetails.Count;
 
+                //int traderDetailsCount = sellsEntryForCustomerVO.SellsEntryForTraderVO.Count;
+                sellsEntryDataLoad = new SellsEntryDataLoad();
+                if (sellsEntryDataLoad.saveSellsData(sellsEntryForCustomerVO))
+                {
+                    MessageBox.Show("Data Is Saved Successfully");
+                    String goodsDetailQueryString1 = goodsDetailQueryString + " and goodsentry.ITEM_NAME='" + itemSelected + "'";
+                    fillData.fillDataGridView(this.sellsEntryDataGridView, goodsDetailQueryString1, this.columnNameToDisplay, this.columnIndexToHide);
+
+                }
+                else
+                {
+                    MessageBox.Show("Data Is Not Saved");
+                }
+                
+                isCellClicked = false;
+            }
         }
+
         private void SellsDetails_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
@@ -95,49 +127,128 @@ namespace EasyShopkeeping.AppsForm.Outward
             errorProvider1.Clear();
             this.CUST_ID = ((ComboBoxItem)sellsEntryCutomerComboBox.SelectedItem).HiddenValue;
             this.customerSelected = ((ComboBoxItem)sellsEntryCutomerComboBox.SelectedItem).ToString();
+            sellsEntryForCustomerVO = new SellsEntryForCustomerVO();
+            sellsEntryForCustomerVO.Cust_id = CUST_ID;
+            sellsEntryForCustomerVO.Cust_name = customerSelected;
+
         }
 
         private void sellsEntryItemComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            errorProvider1.Clear();
-            this.itemSelected = sellsEntryItemComboBox.SelectedItem.ToString();
+           errorProvider1.Clear();
+           this.itemSelected = sellsEntryItemComboBox.SelectedItem.ToString();
            String goodsDetailQueryString1 =goodsDetailQueryString+" and goodsentry.ITEM_NAME='"+itemSelected+"'";
            fillData.fillDataGridView(this.sellsEntryDataGridView, goodsDetailQueryString1, this.columnNameToDisplay, this.columnIndexToHide);
+            
+
         }
 
         private void sellsEntryDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            isCellClicked = true;
+            SellEntryDetails sellEntryDetails=null;
+            SellsEntryForTraderVO sellsEntryForTraderVO=null;
+            if (String.IsNullOrEmpty(itemSelected) || String.IsNullOrEmpty(customerSelected))
+                MessageBox.Show("Please Select Custmer and Item");
 
-            try
+            else
             {
-                if (e.RowIndex >= 0)
+                try
                 {
-                    
-                    String TRDR_FNAME_TMARK = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
-                    String RECV_DATE = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-                    String ITEM_NAME = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
-                    String WT_BOX_TYPE = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
-                    String WT_TXT = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
-                    String TOT_BAL = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[8].Value.ToString();
-                    String G_ENTRY_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[9].Value.ToString();
-                    String TOT_SOLD = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[10].Value.ToString();
-                    String TRDR_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[12].Value.ToString();
-                    String STOCK_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[14].Value.ToString();
-                    String LOT_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[15].Value.ToString();
-                    Console.Write("TRDR_FNAME_TMARK:" + TRDR_FNAME_TMARK + "\nRECV_DATE:" + RECV_DATE + "\nITEM_NAME:" + ITEM_NAME + "\nWT_BOX_TYPE:" + WT_BOX_TYPE + "\nWT_TXT:" + WT_TXT + "\nTOT_BAL:" + TOT_BAL + "\nG_ENTRY_ID:" + G_ENTRY_ID + "\nTOT_SOLD:" + TOT_SOLD + "\nTRDR_ID:" + TRDR_ID + "\nSTOCK_ID:" + STOCK_ID + "\nLOT_ID:" + LOT_ID + "\nCUST_ID" + CUST_ID + "\ncustomerSelected:" + customerSelected);
-                    AddSellsDetailFrm addSellsDetailFrm = new AddSellsDetailFrm(customerSelected, ITEM_NAME);
-                    addSellsDetailFrm.Show();
-                    String str = addSellsDetailFrm.amount;
-                    Console.Write(str);
+                    if (e.RowIndex >= 0)
+                    {
+                        
+
+                        String TRDR_FNAME_TMARK = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString();
+                        String RECV_DATE = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+                        String ITEM_NAME = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+                        String WT_BOX_TYPE = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+                        String WT_TXT = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString();
+                        String TOT_BAL = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[8].Value.ToString();
+                        String LOT_SERIAL = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[5].Value.ToString();
+                        String G_ENTRY_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[9].Value.ToString();
+                        String TOT_SOLD = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[10].Value.ToString();
+                        String TRDR_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[12].Value.ToString();
+                        String STOCK_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[14].Value.ToString();
+                        String LOT_ID = this.sellsEntryDataGridView.Rows[e.RowIndex].Cells[15].Value.ToString();
+                        //           Console.Write("TRDR_FNAME_TMARK:" + TRDR_FNAME_TMARK + "\nRECV_DATE:" + RECV_DATE + "\nITEM_NAME:" + ITEM_NAME + "\nWT_BOX_TYPE:" + WT_BOX_TYPE + "\nWT_TXT:" + WT_TXT + "\nTOT_BAL:" + TOT_BAL + "\nG_ENTRY_ID:" + G_ENTRY_ID + "\nTOT_SOLD:" + TOT_SOLD + "\nTRDR_ID:" + TRDR_ID + "\nSTOCK_ID:" + STOCK_ID + "\nLOT_ID:" + LOT_ID + "\nCUST_ID" + CUST_ID + "\ncustomerSelected:" + customerSelected);
+
+                        //dSellsDetailFrm addSellsDetailFrm = new AddSellsDetailFrm(customerSelected, ITEM_NAME);
+                        //addSellsDetailFrm.Show();
+
+                        using (var form = new AddSellsDetailFrm(customerSelected, ITEM_NAME, TRDR_FNAME_TMARK, TOT_BAL))
+                        {
+
+                            var result = form.ShowDialog();
+                            if (result == DialogResult.OK)
+                            {
+                                if(int.Parse(form.quantity1)>int.Parse(TOT_BAL))
+                                {
+                                    MessageBox.Show("Quantity Is Greater than Total Balance ");
+                                }
+                                else
+                                {
+                                    sellsEntryForTraderVO = new SellsEntryForTraderVO();
+                                    sellEntryDetails = new SellEntryDetails();
+                                    sellEntryDetails.SellItemName = itemSelected;
+                                int totalSold=int.Parse(TOT_SOLD)+int.Parse(form.quantity1);
+                                int totBal=int.Parse(TOT_BAL)-int.Parse(form.quantity1);
+                                sellEntryDetails.Quantity = form.quantity1;
+                                sellEntryDetails.Rate1 = form.rate1;
+                                sellEntryDetails.TotalAmount = form.totalAmount1;
+                                sellEntryDetails.tot_bal1 = totBal.ToString();
+                                sellEntryDetails.tot_sold1 = totalSold.ToString();
+                                sellEntryDetails.sell_txn_id1 = "TxnSell" + GenerateUniqueID.RandomString(8);
+                                sellEntryDetails.sell_date1 = DateHelper.getSqlString(form.sellDate1);
+                                sellEntryDetails.LOT_ID1 = LOT_ID;
+                                sellEntryDetails.SellItemName = ITEM_NAME;
+                                sellEntryDetails.WT_BOX_TYPE1 = WT_BOX_TYPE;
+                                sellEntryDetails.WT_TXT1 = WT_TXT;
+                                }
+
+                                //Console.Write("\nTotAmount:" + form.totalAmount1);
+                            }
+                        }
+
+
+
+                        if (sellEntryDetails != null && sellsEntryForTraderVO != null)
+                        {
+                            sellsEntryForTraderVO.G_ENTRY_ID1 = G_ENTRY_ID;
+                            sellsEntryForTraderVO.LOT_ID1 = LOT_ID;
+                            sellsEntryForTraderVO.LOT_SERIAL1 = LOT_SERIAL;
+                            sellsEntryForTraderVO.STOCK_ID1 = STOCK_ID;
+                            sellsEntryForTraderVO.TRDR_FNAME_TMARK1 = TRDR_FNAME_TMARK;
+                            sellsEntryForTraderVO.TRDR_ID1 = TRDR_ID;
+                            sellEntryDetails.SellsEntryForTraderVO.Add(sellsEntryForTraderVO);
+                            sellsEntryForCustomerVO.SellEntryDetails.Add(sellEntryDetails);
+                        }
+                        
+
+                    }
+
                 }
-              
-            }
-            catch (Exception ex)
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }  
+            
+        }
+
+        
+        private void sellsEntryAddMoreBtn_Click(object sender, EventArgs e)
+        {
+            //isCellClicked = false;
+            Console.WriteLine(sellsEntryForCustomerVO.Cust_name);
+            foreach (SellEntryDetails i in sellsEntryForCustomerVO.SellEntryDetails)
             {
-                MessageBox.Show(ex.Message);
+                Console.WriteLine(i.SellItemName + " ");
+                //Console.WriteLine(i.Rate1 + " ");
             }
             
             
+
         }
 
 

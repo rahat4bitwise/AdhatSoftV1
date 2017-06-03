@@ -701,3 +701,127 @@
 2017-01-07 14:14:10,441 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
 2017-01-07 14:15:12,271 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
 2017-01-07 14:16:40,694 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-08 12:28:45,691 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-08 12:32:00,401 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-08 12:43:49,569 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-08 12:52:58,674 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-01-08 12:54:40,542 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-19 13:29:34,414 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-19 14:03:55,850 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-19 14:35:51,054 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-19 14:56:12,940 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-20 00:14:44,795 [9] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2017-02-20 00:14:44,827 [9] INFO EasyShopkeeping.UserInfoDAO - MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts. ---> System.Exception: Exception of type 'System.Exception' was thrown.
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 50
+2017-02-20 00:19:52,923 [8] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-20 00:24:27,399 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-20 00:34:15,655 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-20 00:42:50,689 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-22 23:50:17,510 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-22 23:53:42,675 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-23 00:37:19,890 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-02-23 00:43:23,594 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:22:59,582 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:26:39,266 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:40:06,876 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:41:24,137 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:48:52,536 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:57:24,566 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 10:58:11,648 [10] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2017-03-26 10:58:11,683 [10] INFO EasyShopkeeping.UserInfoDAO - MySql.Data.MySqlClient.MySqlException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123\'' at line 1
+   at MySql.Data.MySqlClient.MySqlStream.OpenPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadResult(UInt64& affectedRows, Int64& lastInsertId)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetResultSet()
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 53
+2017-03-26 10:58:25,154 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:01:02,934 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:14:02,262 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:23:06,737 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:34:18,534 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:35:45,522 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:46:04,554 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:47:37,414 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:54:42,306 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 11:57:48,515 [9] INFO EasyShopkeeping.UserInfoDAO - DataBase Exception Ocured
+2017-03-26 11:57:48,546 [9] INFO EasyShopkeeping.UserInfoDAO - MySql.Data.MySqlClient.MySqlException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''123\'' at line 1
+   at MySql.Data.MySqlClient.MySqlStream.OpenPacket()
+   at MySql.Data.MySqlClient.NativeDriver.ReadResult(UInt64& affectedRows, Int64& lastInsertId)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetResultSet()
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EasyShopkeeping.UserInfoDAO.validateUser(String username, String password) in f:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\Database\DAO\UserInfoDAO.cs:line 53
+2017-03-26 11:58:27,426 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:00:14,247 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:01:29,587 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:03:16,955 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:04:42,823 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:05:47,599 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:23:18,865 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 12:28:28,607 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 13:25:08,084 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 14:00:31,034 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 14:02:46,064 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 14:09:11,956 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 14:16:17,870 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 14:19:29,950 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 17:11:09,611 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-03-26 17:12:05,836 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-02 16:19:49,721 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-03 00:26:46,226 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:06:45,145 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:09:00,549 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:11:25,747 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:12:56,765 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:51:23,906 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:54:22,960 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 00:59:52,570 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:01:43,225 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:02:55,961 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:05:33,576 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:07:52,023 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:10:13,512 [9] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2017-04-04 01:10:13,553 [9] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2017-04-04 01:10:17,026 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:19:05,775 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 01:20:48,813 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 23:27:09,234 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 23:29:18,235 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-04 23:32:10,591 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 00:11:14,005 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 00:16:48,500 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 00:19:31,936 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 01:13:04,516 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 01:21:50,114 [11] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 01:24:20,357 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 01:26:11,901 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 21:46:31,118 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 22:21:42,029 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 22:25:16,786 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 22:33:04,762 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 22:42:23,420 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 22:45:57,382 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 22:55:38,290 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 23:09:58,028 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 23:14:15,688 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 23:18:09,432 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 23:31:41,543 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 23:48:33,404 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-05 23:53:25,268 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-04-08 00:24:03,752 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-06 11:02:47,987 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-06 11:12:53,286 [9] INFO EasyShopkeeping.MemberLogin - UserName: System.Windows.Forms.TextBox, Text: rahat Tried To Logged In
+2017-05-06 11:12:53,352 [9] INFO EasyShopkeeping.MemberLogin - Window UserName ALI-PC\ALI Tried To Logged In
+2017-05-06 11:12:56,014 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-08 12:16:18,911 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-08 14:03:58,220 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-08 14:05:54,694 [10] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-08 14:06:48,194 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In
+2017-05-08 14:11:15,284 [9] INFO EasyShopkeeping.MemberLogin - User RAHAT Successfully Logged In

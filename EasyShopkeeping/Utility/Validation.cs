@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace EasyShopkeeping.Utility
 {
-    class Validation:CommonUtil
+    class Validation : CommonUtil
     {
         public bool IsDigitsOnly(string str)
         {
@@ -33,7 +33,10 @@ namespace EasyShopkeeping.Utility
         {
             return Regex.IsMatch(input, "^[0-9]+$");
         }
-
+        public static bool IsNumericValue(string input)
+        {
+            return Regex.IsMatch(input, "^[0-9]+$");
+        }
         public bool IsAlphaNumericWithUnderscore(string input)
         {
             return Regex.IsMatch(input, "^[a-zA-Z0-9_]+$");
@@ -48,16 +51,32 @@ namespace EasyShopkeeping.Utility
         public bool IsValidEmail(string email)
         {
             return Regex.IsMatch(email, @"\A(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z", RegexOptions.IgnoreCase);
-           
+
         }
         public static bool IsContainSPace(String val)
         {
-            if(val.Contains(" "))
-            return true;
+            if (val.Contains(" "))
+                return true;
             else
-            return false;
+                return false;
+        }
+        public bool IsDouble(string text)
+        {
+            Double num = 0;
+            bool isDouble = false;
+
+            // Check for empty string.
+            if (string.IsNullOrEmpty(text))
+            {
+                return false;
+            }
+
+            isDouble = Double.TryParse(text, out num);
+
+            return isDouble;
+
+
         }
 
-        
     }
 }

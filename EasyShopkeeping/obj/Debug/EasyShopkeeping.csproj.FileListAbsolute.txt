@@ -50,3 +50,4 @@ F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Inward.AllGoodsEntryDetails.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Outward.SellsEntry.resources
 F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Outward.AddSellsDetailFrm.resources
+F:\Rahat Data 2015-16\EasyShopkeeping\EasyShopkeeping\obj\Debug\EasyShopkeeping.AppsForm.Customer.GetCollectionForCust.resources
